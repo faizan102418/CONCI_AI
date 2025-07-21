@@ -1,0 +1,51 @@
+/* conci-ai-assistant/frontend/src/App.css */
+/* Basic styling for the App component */
+
+/* Tailwind CSS base styles (if not configured globally) */
+/* These directives are crucial for Tailwind to inject its styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure box-sizing is consistent across all elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Basic body styles for the entire page */
+body {
+  margin: 0;
+  /* Using 'Inter' as the primary font, with system fallbacks */
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased; /* Smoother font rendering on WebKit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Smoother font rendering on Firefox for macOS */
+  line-height: 1.5; /* Standard line height for readability */
+  font-weight: 400; /* Default font weight */
+  color: #333; /* Dark gray text color for contrast on light backgrounds */
+  background-color: #f4f4f4; /* Light gray background for the page */
+}
+
+/* General app container styling */
+.App {
+  max-width: 900px; /* Limit overall width for better readability on large screens */
+  margin: 0 auto; /* Center the app horizontally */
+  padding: 20px; /* Add some padding around the content */
+}
+
+/* You can add more custom CSS here if needed, but Tailwind classes are preferred for component styling */
+
+/* Example of custom styling if you avoid Tailwind for some elements */
+/* textarea, input[type="text"], input[type="date"], input[type="time"], select {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+} */

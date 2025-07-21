@@ -1,0 +1,50 @@
+# .gitignore for conci-ai-assistant project
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/                  # Python virtual environment folder
+.ipynb_checkpoints
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+.coverage
+
+# Node.js (Frontend)
+node_modules/          # Node.js dependencies
+dist/                  # Frontend build output (e.g., from Vite)
+.vite/                 # Vite cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env.local             # Local environment variables for frontend
+.env.*.local
+.DS_Store              # macOS specific
+Thumbs.db              # Windows specific
+
+# Environment Variables
+.env                   # Top-level .env file (contains sensitive info)
+backend/.env           # Backend specific .env
+frontend/.env          # Frontend specific .env
+
+# IDE and OS specific files
+.vscode/               # VS Code settings (optional, if you want to ignore)
+.idea/                 # IntelliJ/PyCharm IDE files
+*.swp
+*~
+*.log
+*.tmp
+*.bak
+
+# ESP32 / Embedded
+build/                 # ESP-IDF build output
+sdkconfig              # ESP-IDF configuration file (can be generated)
+# sdkconfig.defaults should be tracked if it contains desired defaults
+# but actual sdkconfig is often generated and can change frequently
